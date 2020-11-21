@@ -19,7 +19,6 @@ passport.use(
     {
       clientID: process.env.CLIENT_ID,
       clientSecret: process.env.CLIENT_SECRET,
-      // callbackURL: "http://localhost:3000/auth/google/secrets",
       callbackURL: process.env.CALLBACK_URL,
       scope: "profile",
     },
@@ -144,5 +143,14 @@ exports.deleteSecret = (req, res) => {
       if (err) return console.log(err.message);
       res.redirect("/secrets");
     });
+  });
+};
+
+// @desc POST router.route("/delete-account/:id")
+exports.deleteAccount = (req, res) => {
+  const userId = req.params.id;
+  User.deleteOne({ _id: userId }, (err) => {
+    if (err) return console.log(err.message);
+    res.redirect("/");
   });
 };
