@@ -1,5 +1,5 @@
 {
-  "name": "secrets",
+  "name": "secrets-v6",
   "version": "1.0.0",
   "description": "",
   "main": "app.js",
@@ -8,8 +8,8 @@
     "dev": "nodemon app"
   },
   "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "author": "Victor Ajibade",
+  "license": "MIT",
   "dependencies": {
     "dotenv": "^8.2.0",
     "ejs": "^3.1.5",
