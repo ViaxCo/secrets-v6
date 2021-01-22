@@ -16,5 +16,7 @@ const connectDB = async () => {
     process.exit(1);
   }
 };
+// To use for session store
+const connection = mongoose.connection;
 
-module.exports = connectDB;
+module.exports = { connectDB, connection };
