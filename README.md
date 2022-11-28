@@ -34,4 +34,4 @@ Use:
 npm run start
 ```
 
-**Demo:** [Secrets](https://secrets-v6.herokuapp.com/)
+**Demo:** [Secrets](https://secrets-v6.onrender.com)
